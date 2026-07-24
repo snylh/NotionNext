@@ -109,10 +109,7 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
-        <script>
-(function(){var b=document.createElement("button");b.textContent="Deploy";b.style.cssText="position:fixed;bottom:20px;right:20px;padding:10px 18px;background:#f48120;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:14px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,.2)";b.onmouseover=function(){b.style.transform="scale(1.05)"};b.onmouseout=function(){b.style.transform="scale(1)"};b.onclick=function(){b.textContent="...";fetch("https://deploy-trigger.snylh.workers.dev").then(function(r){return r.json()}).then(function(d){b.textContent=d.ok?"Done!":"Failed";setTimeout(function(){b.textContent="Deploy"},2000)}).catch(function(){b.textContent="Error";setTimeout(function(){b.textContent="Deploy"},2000)})};document.addEventListener("DOMContentLoaded",function(){document.body.appendChild(b)})})();
-</script>
-</body>
+        </body>
       </Html>
     )
   }
